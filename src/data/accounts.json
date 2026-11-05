@@ -1,0 +1,16 @@
+[
+  {
+    "id": "68d9a60e-c3b8-4baf-9f2f-f48c388dbbdd",
+    "name": "jesus",
+    "email": "mail@mail.com",
+    "passwordHash": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+    "createdAt": "2026-11-04T18:47:33.788Z"
+  },
+  {
+    "id": "80e7d2e8-7116-4ce7-8518-6b2c43ddcfc4",
+    "name": "Peruano_Promedio",
+    "email": "pecausa@mail.com",
+    "passwordHash": "df9abc4d26f9ef989f358248de1d46c0c25deb542f4e7a971e62f04841e0df36",
+    "createdAt": "2026-11-04T19:36:38.339Z"
+  }
+]

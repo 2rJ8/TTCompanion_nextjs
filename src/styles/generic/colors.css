@@ -1,0 +1,346 @@
+/* =====================================================
+   TABLE TOP COMPANION — COLORES
+   Sistema visual web v1.0
+
+   Este archivo es la única fuente de verdad para:
+   - paleta
+   - temas
+   - colores semánticos
+   - estados visuales de componentes
+   ===================================================== */
+
+:root {
+  /* -----------------------------------------------------
+     COLORES DE MARCA Y ESTADO
+     ----------------------------------------------------- */
+
+  --color-primary: #00d8ff;
+  --color-secondary: #26a6b5;
+  --color-accent: #ff9800;
+
+  --color-success: #20c97a;
+  --color-danger: #ff5d6c;
+  --color-info: #36a3ff;
+
+  /* -----------------------------------------------------
+     TEMA DAYLIGHT — CLARO
+     ----------------------------------------------------- */
+
+  --color-daylight-background: #f8f9fa;
+  --color-daylight-surface: #ffffff;
+  --color-daylight-elevated: #f0f4f6;
+  --color-daylight-text: #102126;
+  --color-daylight-border: #dde5e8;
+
+  /* -----------------------------------------------------
+     TEMA AFTER GAME — OSCURO
+     ----------------------------------------------------- */
+
+  --color-night-background: #121212;
+  --color-night-surface: #1b2022;
+  --color-night-elevated: #252c2f;
+  --color-night-text: #f4fafb;
+  --color-night-border: #344044;
+}
+
+/* =======================================================
+   TEMAS
+   ======================================================= */
+
+.theme-daylight {
+  --color-background: var(--color-daylight-background);
+  --color-surface: var(--color-daylight-surface);
+  --color-surface-elevated: var(--color-daylight-elevated);
+  --color-text: var(--color-daylight-text);
+  --color-border: var(--color-daylight-border);
+
+  --color-text-muted: #64757b;
+
+  --color-on-primary: var(--color-daylight-text);
+  --color-on-success: var(--color-daylight-text);
+  --color-on-warning: var(--color-daylight-text);
+  --color-on-danger: var(--color-daylight-text);
+  --color-on-info: var(--color-daylight-text);
+
+  --color-focus: var(--color-primary);
+}
+
+.theme-after-game {
+  --color-background: var(--color-night-background);
+  --color-surface: var(--color-night-surface);
+  --color-surface-elevated: var(--color-night-elevated);
+  --color-text: var(--color-night-text);
+  --color-border: var(--color-night-border);
+
+  --color-text-muted: #aebec3;
+
+  --color-on-primary: var(--color-night-text);
+  --color-on-success: var(--color-night-text);
+  --color-on-warning: var(--color-night-text);
+  --color-on-danger: var(--color-night-text);
+  --color-on-info: var(--color-night-text);
+
+  --color-focus: var(--color-primary);
+}
+
+/* =======================================================
+   COLORES BASE
+   ======================================================= */
+
+.color-primary {
+  color: var(--color-primary);
+}
+.color-secondary {
+  color: var(--color-secondary);
+}
+.color-accent {
+  color: var(--color-accent);
+}
+.color-success {
+  color: var(--color-success);
+}
+.color-danger {
+  color: var(--color-danger);
+}
+.color-info {
+  color: var(--color-info);
+}
+
+/* =======================================================
+   COLORES DE FONDO
+   ======================================================= */
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+.bg-accent {
+  background-color: var(--color-accent);
+}
+.bg-success {
+  background-color: var(--color-success);
+}
+.bg-danger {
+  background-color: var(--color-danger);
+}
+.bg-info {
+  background-color: var(--color-info);
+}
+
+/* =======================================================
+   BASE DE LA INTERFAZ
+   ======================================================= */
+
+body {
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+}
+
+/* =======================================================
+   TARJETAS
+   ======================================================= */
+
+.card {
+  color: var(--color-text);
+  background-color: var(--color-surface);
+  border-color: var(--color-border);
+}
+
+.card__footer {
+  border-top-color: var(--color-border);
+}
+
+/* =======================================================
+   BOTONES
+   ======================================================= */
+
+.btn--primary {
+  color: var(--color-on-primary);
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn--secondary {
+  color: var(--color-text);
+  background-color: var(--color-surface);
+  border-color: var(--color-border);
+}
+
+.btn--outline {
+  color: var(--color-text);
+  background-color: transparent;
+  border-color: var(--color-border);
+}
+
+.btn--primary:hover,
+.btn--primary:focus-visible {
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
+}
+
+.btn--secondary:hover,
+.btn--secondary:focus-visible,
+.btn--outline:hover,
+.btn--outline:focus-visible {
+  background-color: var(--color-surface-elevated);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+/* =======================================================
+   CHIPS
+   ======================================================= */
+
+.chip {
+  color: var(--color-text);
+  background-color: var(--color-surface);
+  border-color: var(--color-border);
+}
+
+.chip:hover {
+  background-color: var(--color-surface-elevated);
+}
+
+.chip--active {
+  color: var(--color-on-primary);
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.chip:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+/* =======================================================
+   TABS
+   ======================================================= */
+
+.tabs {
+  border-bottom-color: var(--color-border);
+}
+
+.tab {
+  color: var(--color-text-muted);
+}
+
+.tab:hover,
+.tab.is-active {
+  color: var(--color-text);
+}
+
+.tab.is-active::after {
+  background-color: var(--color-primary);
+}
+
+/* =======================================================
+   CAMPOS
+   ======================================================= */
+
+.input {
+  color: var(--color-text);
+  background-color: var(--color-surface);
+  border-color: var(--color-border);
+}
+
+.input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.input:hover {
+  border-color: var(--color-secondary);
+}
+
+.input:focus {
+  border-color: var(--color-focus);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-focus) 18%, transparent);
+}
+
+.input[aria-invalid="true"] {
+  border-color: var(--color-danger);
+}
+
+.field__message {
+  color: var(--color-text-muted);
+}
+
+.field__message--error {
+  color: var(--color-danger);
+}
+
+/* =======================================================
+   BADGES / ESTADOS
+   ======================================================= */
+
+.badge--success {
+  color: var(--color-on-success);
+  background-color: var(--color-success);
+}
+
+.badge--warning {
+  color: var(--color-on-warning);
+  background-color: var(--color-accent);
+}
+
+.badge--error {
+  color: var(--color-on-danger);
+  background-color: var(--color-danger);
+}
+
+.badge--info {
+  color: var(--color-on-info);
+  background-color: var(--color-info);
+}
+
+/* =======================================================
+   NAVEGACIÓN
+   ======================================================= */
+
+.nav__link {
+  color: var(--color-text-muted);
+}
+
+.nav__link:hover,
+.nav__link.is-active {
+  color: var(--color-text);
+}
+
+/* =======================================================
+   SUPERFICIES ELEVADAS
+   ======================================================= */
+
+.surface {
+  color: var(--color-text);
+  background-color: var(--color-surface);
+}
+
+.surface-elevated {
+  color: var(--color-text);
+  background-color: var(--color-surface-elevated);
+}
+
+/* =======================================================
+   ICONOGRAFÍA
+   ======================================================= */
+
+.icon {
+  color: currentColor;
+}
+
+/* =======================================================
+   UTILIDADES DE TEXTO
+   ======================================================= */
+
+.text-muted {
+  color: var(--color-text-muted);
+}

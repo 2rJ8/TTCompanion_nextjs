@@ -1,0 +1,178 @@
+[
+  {
+    "id": "arcs-lucia-m",
+    "game": "arcs",
+    "user": "Lucía M.",
+    "initials": "LM",
+    "rating": 9,
+    "date": "Hace 2 horas",
+    "title": "Tensión desde el primer turno",
+    "comment": "Cada carta cambia por completo el plan. La negociación y los giros de la campaña hacen que cada partida cuente una historia distinta.",
+    "likes": 326
+  },
+  {
+    "id": "arcs-david-r",
+    "game": "arcs",
+    "user": "David R.",
+    "initials": "DR",
+    "rating": 8,
+    "date": "Hace 3 días",
+    "title": "Profundo y muy rejugable",
+    "comment": "Tiene una curva de aprendizaje exigente, pero cuando entiendes el ritmo de las cartas las decisiones son muy satisfactorias.",
+    "likes": 94
+  },
+  {
+    "id": "sky-team-nora-m",
+    "game": "sky-team",
+    "user": "Nora M.",
+    "initials": "NM",
+    "rating": 9,
+    "date": "Hace 1 día",
+    "title": "Cada silencio importa",
+    "comment": "La comunicación limitada consigue una tensión increíble. Es rápido de explicar y perfecto para jugar en pareja.",
+    "likes": 64
+  },
+  {
+    "id": "sky-team-pablo-s",
+    "game": "sky-team",
+    "user": "Pablo S.",
+    "initials": "PS",
+    "rating": 10,
+    "date": "Hace 1 semana",
+    "title": "Cooperación en estado puro",
+    "comment": "Los escenarios hacen que siempre quieras intentar un aterrizaje más. Un reto corto, elegante y muy adictivo.",
+    "likes": 48
+  },
+  {
+    "id": "heat-marta-g",
+    "game": "heat",
+    "user": "Marta G.",
+    "initials": "MG",
+    "rating": 9,
+    "date": "Hace 4 días",
+    "title": "La carrera nunca está decidida",
+    "comment": "Las curvas y la gestión del calor mantienen la emoción hasta la última vuelta. Funciona genial con grupos grandes.",
+    "likes": 81
+  },
+  {
+    "id": "heat-jorge-p",
+    "game": "heat",
+    "user": "Jorge P.",
+    "initials": "JP",
+    "rating": 8,
+    "date": "Hace 2 semanas",
+    "title": "Fácil de aprender, difícil de dominar",
+    "comment": "Las reglas entran rápido y cada piloto puede encontrar su estilo. El modo campeonato alarga mucho la vida del juego.",
+    "likes": 37
+  },
+  {
+    "id": "the-white-castle-ines-v",
+    "game": "the-white-castle",
+    "user": "Inés V.",
+    "initials": "IV",
+    "rating": 9,
+    "date": "Hace 5 días",
+    "title": "Muchas decisiones en poco tiempo",
+    "comment": "Es compacto, bonito y tiene una profundidad sorprendente. Cada dado puede abrir una estrategia diferente.",
+    "likes": 55
+  },
+  {
+    "id": "the-white-castle-raul-c",
+    "game": "the-white-castle",
+    "user": "Raúl C.",
+    "initials": "RC",
+    "rating": 8,
+    "date": "Hace 3 semanas",
+    "title": "Un euro muy redondo",
+    "comment": "La partida termina justo cuando empiezas a dominarla, así que apetece volver a jugar para probar otra combinación.",
+    "likes": 29
+  },
+  {
+    "id": "pax-pamir-alba-t",
+    "game": "pax-pamir",
+    "user": "Alba T.",
+    "initials": "AT",
+    "rating": 9,
+    "date": "Hace 6 días",
+    "title": "Un tema histórico excepcional",
+    "comment": "Las alianzas cambian constantemente y nunca puedes confiarte. Se siente como participar en una historia viva.",
+    "likes": 42
+  },
+  {
+    "id": "pax-pamir-ernest-f",
+    "game": "pax-pamir",
+    "user": "Ernest F.",
+    "initials": "EF",
+    "rating": 8,
+    "date": "Hace 1 mes",
+    "title": "Exigente pero memorable",
+    "comment": "No es el juego más accesible, pero recompensa cada partida con decisiones políticas y momentos inesperados.",
+    "likes": 21
+  },
+  {
+    "id": "pandemic-sofia-l",
+    "game": "pandemic",
+    "user": "Sofía L.",
+    "initials": "SL",
+    "rating": 9,
+    "date": "Hace 2 días",
+    "title": "El clásico que siempre funciona",
+    "comment": "Es muy fácil conseguir que todo el grupo se implique. La presión aumenta de forma fantástica hasta el final.",
+    "likes": 73
+  },
+  {
+    "id": "pandemic-miguel-a",
+    "game": "pandemic",
+    "user": "Miguel A.",
+    "initials": "MA",
+    "rating": 8,
+    "date": "Hace 2 meses",
+    "title": "Ideal para empezar en los cooperativos",
+    "comment": "Las habilidades de los personajes hacen que todos tengan algo importante que aportar durante la partida.",
+    "likes": 34
+  },
+  {
+    "id": "cascadia-clara-n",
+    "game": "cascadia",
+    "user": "Clara N.",
+    "initials": "CN",
+    "rating": 9,
+    "date": "Hace 1 semana",
+    "title": "Relajante y lleno de decisiones",
+    "comment": "El arte es precioso y las reglas son sencillas, pero siempre hay que pensar dónde encaja mejor cada animal.",
+    "likes": 61
+  },
+  {
+    "id": "cascadia-daniel-b",
+    "game": "cascadia",
+    "user": "Daniel B.",
+    "initials": "DB",
+    "rating": 8,
+    "date": "Hace 3 semanas",
+    "title": "Perfecto para cualquier mesa",
+    "comment": "Funciona muy bien a dos y en solitario. Es uno de esos juegos que puedes sacar con cualquier tipo de jugador.",
+    "likes": 28
+  },
+  {
+    "id": "heat-1793818409737",
+    "game": "heat",
+    "user": "jesus",
+    "initials": "J",
+    "rating": 4,
+    "date": "Ahora",
+    "title": "Genial",
+    "comment": "Es un juego genia",
+    "likes": 0
+  },
+  {
+    "id": "heat-1793821025682",
+    "game": "heat",
+    "user": "Peruano_Promedio",
+    "initials": "P",
+    "rating": 10,
+    "date": "Ahora",
+    "title": "Poca causa limeña",
+    "comment": "Machu Pichu",
+    "likes": 0
+  }
+]

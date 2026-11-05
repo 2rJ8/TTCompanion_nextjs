@@ -1,0 +1,37 @@
+@import url("./pages/landing.css");
+@import url("./pages/games.css");
+@import url("./pages/game-detail.css");
+@import url("./pages/login.css");
+@import url("./pages/checkout.css");
+
+:root {
+  font-family: system-ui, sans-serif;
+  color: #222;
+  background: #fff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.empty-results {
+  grid-column: 1 / -1;
+  padding: 48px;
+  color: var(--color-text-muted);
+  text-align: center;
+}

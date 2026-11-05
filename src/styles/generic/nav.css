@@ -1,0 +1,296 @@
+/* src/CSS/games.css */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--color-background);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.skip-link {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 2000;
+  padding: 10px 14px;
+  border-radius: 5px;
+  color: var(--color-night-text);
+  background: var(--color-night-background);
+  transform: translateY(-150%);
+  transition: transform 150ms ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.brand-logo {
+    height: 24px;
+    margin-right: 0.5rem;
+}
+
+.brand-name {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-bold);
+}
+
+.header-actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.header-icon-button {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.header-icon-button:hover {
+    color: var(--primary-color);
+}
+
+.icon--md {
+    font-size: 1.5rem;
+}
+
+/* CSS for main navigation */
+.main-nav {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.main-nav a,
+.nav-trigger,
+.search-link {
+    font-size: 13px;
+    font-weight: 600;
+    color: #52666c;
+    transition: color 150ms ease;
+}
+
+.main-nav a:hover,
+.nav-trigger:hover,
+.search-link:hover {
+    color: var(--color-text);
+}
+
+.nav-dropdown {
+    position: relative;
+}
+
+.nav-trigger {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 40px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    font-family: inherit;
+    cursor: pointer;
+    color: var(--text-color);
+    font-weight: var(--font-weight-medium);
+}
+
+.nav-trigger::after {
+    width: 7px;
+    height: 7px;
+    content: "";
+    border-right: 1.5px solid currentColor;
+    border-bottom: 1.5px solid currentColor;
+    transform: rotate(45deg) translateY(-2px);
+    transition: transform 150ms ease;
+}
+
+.nav-dropdown:hover .nav-trigger::after,
+.nav-dropdown:focus-within .nav-trigger::after {
+    transform: rotate(225deg) translate(-1px, -1px);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--color-background);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 150px;
+    display: none;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: var(--text-color);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+    background-color: var(--hover-color);
+}
+
+.dropdown-menu[hidden] {
+    display: none;
+}
+
+.nav-dropdown:hover .dropdown-menu,
+.nav-dropdown:focus-within .dropdown-menu {
+    display: block;
+}
+
+/* Header actions */
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  justify-self: end;
+}
+
+.header-icon-button {
+  width: 38px;
+  height: 38px;
+  display: inline-grid;
+  place-items: center;
+  padding: 0;
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  color: var(--color-text);
+  background: transparent;
+  cursor: pointer;
+  transition:
+    color 150ms ease,
+    background-color 150ms ease,
+    border-color 150ms ease;
+}
+
+.header-icon-button:hover,
+.header-icon-button:focus-visible {
+  border-color: var(--color-secondary);
+  color: var(--color-secondary);
+  background: var(--color-surface-elevated);
+}
+
+.header-icon-button svg {
+  width: 18px;
+  height: 18px;
+}
+
+.user-button {
+  border: 0;
+  background: var(--color-surface-elevated);
+}
+
+.user-button:hover,
+.user-button:focus-visible {
+  background: var(--color-primary);
+  color: var(--color-text);
+}
+
+.user-session {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.user-session-name {
+  max-width: 110px;
+  overflow: hidden;
+  color: var(--color-text-muted);
+  font-size: 11px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+/* Brand */
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  justify-self: start;
+  flex-shrink: 0;
+}
+
+.brand-logo {
+  width: 38px;
+  height: 38px;
+  display: block;
+}
+
+.brand-name {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.brand-mark {
+  position: relative;
+
+  width: 32px;
+  height: 32px;
+
+  background: var(--color-primary);
+
+  transform: rotate(30deg);
+  border-radius: 5px;
+}
+
+.brand-mark::before,
+.brand-mark::after,
+.brand-mark span {
+  content: "";
+
+  position: absolute;
+
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+  background: var(--color-text);
+}
+
+.brand-mark::before {
+  top: 6px;
+  left: 6px;
+}
+
+.brand-mark::after {
+  right: 6px;
+  bottom: 6px;
+}
+
+.brand-mark span {
+  right: 6px;
+  top: 6px;
+}

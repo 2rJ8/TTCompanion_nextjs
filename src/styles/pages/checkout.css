@@ -1,0 +1,182 @@
+.coffee-support-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 11px;
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+  color: var(--color-secondary);
+  font-size: 11px;
+  font-weight: 700;
+  transition: background-color 150ms ease, border-color 150ms ease;
+}
+
+.coffee-support-link:hover,
+.coffee-support-link:focus-visible {
+  border-color: var(--color-secondary);
+  background: rgba(38, 166, 181, 0.1);
+}
+
+.checkout-page {
+  min-height: calc(100vh - 77px);
+  padding: 34px 0 80px;
+  background: var(--color-background);
+}
+
+.checkout-layout {
+  width: min(660px, calc(100% - 48px));
+}
+
+.checkout-back {
+  display: block;
+  width: 100%;
+  margin: 0 0 28px;
+  color: var(--color-text-muted);
+  font-size: 12px;
+}
+
+.checkout-back a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 24px;
+}
+
+.checkout-back a:hover {
+  color: var(--color-text);
+}
+
+.checkout-card {
+  width: 100%;
+  padding: 32px;
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  background: var(--color-surface);
+  box-shadow: 0 12px 30px rgba(16, 33, 38, 0.06);
+}
+
+.checkout-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.coffee-icon {
+  display: grid;
+  flex: 0 0 auto;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--color-secondary);
+  background: rgba(38, 166, 181, 0.12);
+}
+
+.checkout-heading h1 {
+  margin: 8px 0 6px;
+  font-family: var(--font-display);
+}
+
+.checkout-heading p {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 13px;
+}
+
+.checkout-summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 28px 0 24px;
+  padding: 16px;
+  border-radius: 8px;
+  color: var(--color-text);
+  background: var(--color-background);
+  font-size: 13px;
+}
+
+.checkout-summary strong {
+  color: var(--color-secondary);
+}
+
+.checkout-form {
+  display: grid;
+  gap: 20px;
+}
+
+.checkout-form fieldset {
+  display: grid;
+  gap: 8px;
+  padding: 0;
+  border: 0;
+}
+
+.checkout-form legend {
+  margin-bottom: 7px;
+  color: var(--color-text);
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.checkout-form label {
+  margin-top: 5px;
+  color: var(--color-text-muted);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.checkout-form input {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  color: var(--color-text);
+  background: var(--color-background);
+  font: inherit;
+  font-size: 13px;
+}
+
+.checkout-form input:focus {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 1px;
+}
+
+.checkout-fields-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.checkout-fields-row div {
+  display: grid;
+  gap: 8px;
+}
+
+.checkout-submit {
+  justify-content: center;
+  gap: 7px;
+  margin-top: 4px;
+}
+
+.checkout-note {
+  margin: -8px 0 0;
+  color: var(--color-text-muted);
+  font-size: 11px;
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  .coffee-support-link {
+    padding: 7px;
+    font-size: 0;
+  }
+
+  .checkout-layout {
+    width: min(100% - 32px, 660px);
+  }
+
+  .checkout-card {
+    padding: 22px;
+  }
+}

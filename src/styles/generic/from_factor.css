@@ -1,0 +1,402 @@
+/* =========================================
+   TABLE TOP COMPANION — DESIGN SYSTEM
+   Geometría, espaciado y componentes
+
+   NOTA:
+   Este archivo NO contiene colores.
+   La apariencia cromática, temas y estados
+   visuales deben resolverse en colors.css.
+   ========================================= */
+
+:root {
+  /* -----------------------------------------
+     ESPACIADO — retícula base 4 px
+     ----------------------------------------- */
+  --space-xxs: 4px;
+  --space-xs: 8px;
+  --space-s: 12px;
+  --space-m: 16px;
+  --space-l: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+
+  /* -----------------------------------------
+     RADIOS
+     ----------------------------------------- */
+  --radius-xs: 6px;
+  --radius-s: 10px;
+  --radius-m: 16px;
+  --radius-l: 24px;
+  --radius-pill: 999px;
+
+  /* -----------------------------------------
+     BORDES
+     ----------------------------------------- */
+  --border-width: 1px;
+}
+
+/* =========================================
+   RESET / BASE
+   ========================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+/* =========================================
+   CONTENEDORES
+   ========================================= */
+
+.container {
+  width: min(100% - 2 * var(--space-l), 1200px);
+  margin-inline: auto;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+}
+
+.stack--xs {
+  gap: var(--space-xs);
+}
+
+.stack--s {
+  gap: var(--space-s);
+}
+
+.stack--m {
+  gap: var(--space-m);
+}
+
+.stack--l {
+  gap: var(--space-l);
+}
+
+.stack--xl {
+  gap: var(--space-xl);
+}
+
+.cluster {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-s);
+}
+
+/* =========================================
+   TARJETAS
+   ========================================= */
+
+.card {
+  border-style: solid;
+  border-width: var(--border-width);
+  border-radius: var(--radius-m);
+  overflow: hidden;
+}
+
+.card__content {
+  padding: var(--space-l);
+}
+
+.card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-m);
+}
+
+.card__footer {
+  display: flex;
+  align-items: center;
+  gap: var(--space-s);
+  padding: var(--space-m) var(--space-l);
+}
+
+/* =========================================
+   BOTONES
+   ========================================= */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+
+  min-height: 40px;
+  padding: 0 var(--space-m);
+
+  border-style: solid;
+  border-width: 1px;
+  border-radius: var(--radius-s);
+
+  cursor: pointer;
+  transition: opacity 150ms ease;
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.btn--icon {
+  width: 40px;
+  padding: 0;
+}
+
+/*
+  Variantes visuales:
+  .btn--primary
+  .btn--secondary
+  .btn--outline
+
+  Se definen en colors.css.
+*/
+
+/* =========================================
+   CHIPS
+   ========================================= */
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xxs);
+
+  min-height: 32px;
+  padding: 0 var(--space-s);
+
+  border-style: solid;
+  border-width: 1px;
+  border-radius: var(--radius-pill);
+
+  white-space: nowrap;
+}
+
+/*
+  Estado activo:
+  .chip--active
+
+  Se define visualmente en colors.css.
+*/
+
+/* =========================================
+   TABS
+   ========================================= */
+
+.tabs {
+  display: flex;
+  align-items: center;
+  gap: var(--space-l);
+
+  border-bottom-style: solid;
+  border-bottom-width: var(--border-width);
+}
+
+.tab {
+  position: relative;
+  padding: var(--space-s) 0;
+
+  border: 0;
+
+  cursor: pointer;
+}
+
+.tab.is-active {
+  font-weight: 600;
+}
+
+.tab.is-active::after {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  bottom: -1px;
+  height: 2px;
+}
+
+/*
+  El color del indicador activo se define en colors.css.
+*/
+
+/* =========================================
+   CAMPOS
+   ========================================= */
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.field__label {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.input {
+  width: 100%;
+  min-height: 44px;
+  padding: 0 var(--space-m);
+
+  border-style: solid;
+  border-width: 1px;
+  border-radius: var(--radius-s);
+
+  outline: none;
+}
+
+/* =========================================
+   BADGES / ESTADOS
+   ========================================= */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+
+  min-height: 24px;
+  padding: 0 var(--space-xs);
+
+  border-radius: var(--radius-pill);
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/*
+  Variantes:
+  .badge--success
+  .badge--warning
+  .badge--error
+  .badge--info
+
+  Se definen en colors.css.
+*/
+
+/* =========================================
+   NAVEGACIÓN
+   ========================================= */
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-l);
+}
+
+.nav__link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+
+  text-decoration: none;
+}
+
+.nav__link.is-active {
+  font-weight: 600;
+}
+
+/*
+  Estados y colores de navegación
+  se definen en colors.css.
+*/
+
+/* =========================================
+   ICONOS
+   ========================================= */
+
+.icon {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 auto;
+}
+
+.icon--s {
+  width: 16px;
+  height: 16px;
+}
+
+.icon--l {
+  width: 24px;
+  height: 24px;
+}
+
+/*
+  El trazo/relleno de los iconos se define
+  por el sistema de iconografía o colors.css.
+*/
+
+/* =========================================
+   UTILIDADES
+   ========================================= */
+
+.radius-xs {
+  border-radius: var(--radius-xs);
+}
+
+.radius-s {
+  border-radius: var(--radius-s);
+}
+
+.radius-m {
+  border-radius: var(--radius-m);
+}
+
+.radius-l {
+  border-radius: var(--radius-l);
+}
+
+.radius-pill {
+  border-radius: var(--radius-pill);
+}
+
+.p-xs {
+  padding: var(--space-xs);
+}
+
+.p-s {
+  padding: var(--space-s);
+}
+
+.p-m {
+  padding: var(--space-m);
+}
+
+.p-l {
+  padding: var(--space-l);
+}
+
+.p-xl {
+  padding: var(--space-xl);
+}
+
+.gap-xs {
+  gap: var(--space-xs);
+}
+
+.gap-s {
+  gap: var(--space-s);
+}
+
+.gap-m {
+  gap: var(--space-m);
+}
+
+.gap-l {
+  gap: var(--space-l);
+}
+
+.gap-xl {
+  gap: var(--space-xl);
+}

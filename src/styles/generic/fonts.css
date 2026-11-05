@@ -1,0 +1,340 @@
+/* =========================================================
+   TABLE TOP COMPANION — TIPOGRAFÍA
+   Sistema visual web v1.0
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   FONT FAMILIES
+   --------------------------------------------------------- */
+
+:root {
+  --font-display: "Space Grotesk", sans-serif;
+  --font-interface: "Inter", sans-serif;
+
+  /* Familia por defecto de la interfaz */
+  --font-body: var(--font-interface);
+}
+
+/* =========================================================
+   REGLAS BASE DE TIPOGRAFÍA
+   ---------------------------------------------------------
+   Todo elemento que no tenga una clase .font-* recibe
+   explícitamente Inter. Los elementos de display/título
+   reciben Space Grotesk.
+   ========================================================= */
+
+/* Inter — interfaz y texto */
+html,
+body {
+  font-family: var(--font-interface);
+}
+
+button,
+input,
+textarea,
+select,
+option,
+optgroup {
+  font-family: var(--font-interface);
+}
+
+/* Navegación e interfaz */
+nav,
+.nav,
+.nav__link,
+.field,
+.field__label,
+.field__message,
+.btn,
+.chip,
+.badge,
+.tab {
+  font-family: var(--font-interface);
+}
+
+/* Datos y contenido de interfaz */
+table,
+thead,
+tbody,
+tfoot,
+tr,
+th,
+td,
+code,
+small,
+label {
+  font-family: var(--font-interface);
+}
+
+/* Body headings — Space Grotesk */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+}
+
+/* Componentes de display */
+.card__header,
+.card__footer,
+.showcase-brand,
+.showcase-brand__mark {
+  font-family: var(--font-interface);
+}
+
+/* =========================================================
+   SPACE GROTESK — DISPLAY / TÍTULOS
+   ========================================================= */
+
+/*
+ * Título / Portada
+ * Space Grotesk — 56px — 700 — 100%
+ */
+.font-display-cover {
+  font-family: var(--font-display);
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/*
+ * Título / 1
+ * Space Grotesk — 36px — 700 — 112%
+ */
+.font-display-title {
+  font-family: var(--font-display);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.12;
+}
+
+/*
+ * Título / 4
+ * Space Grotesk — 24px — 700
+ */
+.font-display-section {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* =========================================================
+   INTER — INTERFAZ / TEXTO
+   ========================================================= */
+
+/*
+ * Texto / Grande
+ * Inter — 18px — 400 — 155%
+ */
+.font-text-large {
+  font-family: var(--font-interface);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.55;
+}
+
+/*
+ * Texto / Base
+ * Inter — 15px — 400 — 155%
+ */
+.font-text-base {
+  font-family: var(--font-interface);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.55;
+}
+
+/*
+ * Etiqueta / Destacada
+ * Inter — 13px — 600
+ */
+.font-label-highlight {
+  font-family: var(--font-interface);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+/*
+ * Nota / Base
+ * Inter — 12px — 400
+ */
+.font-note-base {
+  font-family: var(--font-interface);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* =========================================================
+   ASIGNACIONES EXPLÍCITAS A COMPONENTES
+   ---------------------------------------------------------
+   Estas reglas hacen que los componentes del design system
+   mantengan una familia aunque se utilicen fuera del
+   showcase.
+   ========================================================= */
+
+/* Botones */
+.btn {
+  font-family: var(--font-interface);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+/* Chips */
+.chip {
+  font-family: var(--font-interface);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.chip--active {
+  font-weight: 600;
+}
+
+/* Tabs */
+.tab {
+  font-family: var(--font-interface);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Navegación */
+.nav__link {
+  font-family: var(--font-interface);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Campos */
+.field__label {
+  font-family: var(--font-interface);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.field__message {
+  font-family: var(--font-interface);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.input {
+  font-family: var(--font-interface);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.55;
+}
+
+/* Badges */
+.badge {
+  font-family: var(--font-interface);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+/* =========================================================
+   SHOWCASE
+   ---------------------------------------------------------
+   Tipografía específica de los elementos que no tienen
+   clase .font-* en el HTML actual.
+   ========================================================= */
+
+.showcase-label {
+  font-family: var(--font-interface);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.showcase-lead {
+  font-family: var(--font-interface);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.55;
+}
+
+.showcase-game-card__cover {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.showcase-hero-card__cover {
+  font-family: var(--font-display);
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.showcase-spacing__item,
+.showcase-radius__item {
+  font-family: var(--font-interface);
+}
+
+.showcase-spacing__item strong {
+  font-family: var(--font-interface);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.showcase-table {
+  font-family: var(--font-interface);
+}
+
+.showcase-table th {
+  font-family: var(--font-interface);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.showcase-table td {
+  font-family: var(--font-interface);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.55;
+}
+
+.showcase-alert {
+  font-family: var(--font-interface);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.55;
+}
+
+.showcase-empty {
+  font-family: var(--font-interface);
+}
+
+/* =========================================================
+   PESOS SEMÁNTICOS
+   ========================================================= */
+
+strong,
+b {
+  font-weight: 600;
+}
+
+em,
+i {
+  font-family: var(--font-interface);
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: var(--font-interface);
+}
