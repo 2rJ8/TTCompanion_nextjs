@@ -1,5 +1,6 @@
-import { ArrowUpRight, Heart, MessageCircle, Star } from "lucide-react";
+import { ArrowUpRight, Heart, MessageCircle } from "lucide-react";
 import NewsCard from "./NewsCard";
+import RatingStars from "./RatingStars";
 
 export default function NewsSection() {
   return (
@@ -34,7 +35,8 @@ export default function NewsSection() {
               tensión con solo doce dados.”
             </blockquote>
             <div className="news-rating">
-              <span className="star-rating" aria-label="5 estrellas de 5">{[1, 2, 3, 4, 5].map((star) => <Star key={star} className="icon--sm" fill="currentColor" aria-hidden="true" />)}</span> <small>Experiencia cooperativa</small>
+              <RatingStars count={5} label="5 estrellas de 5" />{" "}
+              <small>Experiencia cooperativa</small>
             </div>
             <div className="news-card-footer">
               <span><Heart className="icon--sm" aria-hidden="true" /> 64</span>

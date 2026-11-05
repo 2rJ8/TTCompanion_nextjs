@@ -1,9 +1,22 @@
  'use client'
 
-import { Coffee, Moon, Settings, Sun, UserRound } from "lucide-react";
+import { Coffee, Menu, Moon, Settings, Sun, UserRound, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 export default function SiteHeader({ theme, user, onLogout, onThemeChange }) {
+  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+
+  useEffect(() => {
+    function handleKeyDown(event) {
+      if (event.key === "Escape" && isMobileNavOpen) {
+        setIsMobileNavOpen(false);
+      }
+    }
+
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, [isMobileNavOpen]);
+
   return (
     <>
       <a className="skip-link" href="#main-content">Saltar al contenido principal</a>
@@ -22,9 +35,14 @@ export default function SiteHeader({ theme, user, onLogout, onThemeChange }) {
           />
           <span className="brand-name">Table Top Companion</span>
         </a>
-        <nav className="main-nav" aria-label="Navegación principal">
+        <nav
+          id="mobile-navigation"
+          className={`main-nav${isMobileNavOpen ? " is-open" : ""}`}
+          aria-label="Navegación principal"
+        >
           <NavGroup
             title="Explorar"
+            onNavigate={() => setIsMobileNavOpen(false)}
             links={[
               ["#games", "Juegos"],
               ["#collections", "Colecciones"],
@@ -33,6 +51,7 @@ export default function SiteHeader({ theme, user, onLogout, onThemeChange }) {
           />
           <NavGroup
             title="Partidas"
+            onNavigate={() => setIsMobileNavOpen(false)}
             links={[
               ["#games", "Mis partidas"],
               ["#games", "Crear partida"],
@@ -40,12 +59,27 @@ export default function SiteHeader({ theme, user, onLogout, onThemeChange }) {
           />
           <NavGroup
             title="Comunidad"
+            onNavigate={() => setIsMobileNavOpen(false)}
             links={[
               ["#news", "Grupos"],
               ["#news", "Eventos"],
             ]}
           />
         </nav>
+        <button
+          className="mobile-nav-toggle"
+          type="button"
+          aria-expanded={isMobileNavOpen}
+          aria-controls="mobile-navigation"
+          aria-label={isMobileNavOpen ? "Cerrar menú" : "Abrir menú"}
+          onClick={() => setIsMobileNavOpen((current) => !current)}
+        >
+          {isMobileNavOpen ? (
+            <X className="icon--md" aria-hidden="true" />
+          ) : (
+            <Menu className="icon--md" aria-hidden="true" />
+          )}
+        </button>
         <div className="header-actions">
           <a className="coffee-support-link" href="#checkout">
             <Coffee className="icon--sm" aria-hidden="true" /> Invítame a un café
@@ -89,7 +123,7 @@ export default function SiteHeader({ theme, user, onLogout, onThemeChange }) {
   );
 }
 
-function NavGroup({ title, links }) {
+function NavGroup({ title, links, onNavigate }) {
   const [isOpen, setIsOpen] = useState(false)
   const triggerRef = useRef(null)
 
@@ -118,7 +152,14 @@ function NavGroup({ title, links }) {
       </button>
       <div className="dropdown-menu" hidden={!isOpen}>
         {links.map(([href, label]) => (
-          <a href={href} key={label} onClick={() => setIsOpen(false)}>
+          <a
+            href={href}
+            key={label}
+            onClick={() => {
+              setIsOpen(false);
+              onNavigate();
+            }}
+          >
             {label}
           </a>
         ))}
