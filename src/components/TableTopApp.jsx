@@ -7,6 +7,7 @@ import GamesPage from "./catalog/GamesPage";
 import GameDetailPage from "./catalog/GameDetailPage";
 import LoginPage from "./auth/LoginPage";
 import CheckoutPage from "./checkout/CheckoutPage";
+import SiteFooter from "./layout/SiteFooter";
 
 export default function TableTopApp() {
   const [route, setRoute] = useState("#home");
@@ -68,6 +69,7 @@ export default function TableTopApp() {
         }
       />
       {page}
+      <SiteFooter />
     </>
   );
 }

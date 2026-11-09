@@ -61,7 +61,7 @@
     width: 100%;
     padding: 12px;
     background-color: var(--color-primary);
-    color: var(--color-night-text);
+    color: var(--color-daylight-text);
     font-size: 16px;
     border: none;
     border-radius: 4px;

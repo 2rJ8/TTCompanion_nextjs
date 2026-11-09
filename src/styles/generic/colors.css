@@ -15,7 +15,7 @@
      ----------------------------------------------------- */
 
   --color-primary: #00d8ff;
-  --color-secondary: #26a6b5;
+  --color-secondary: #087f8c;
   --color-accent: #ff9800;
 
   --color-success: #20c97a;
@@ -62,7 +62,7 @@
   --color-on-danger: var(--color-daylight-text);
   --color-on-info: var(--color-daylight-text);
 
-  --color-focus: var(--color-primary);
+  --color-focus: #007f94;
 }
 
 .theme-after-game {
@@ -80,7 +80,7 @@
   --color-on-danger: var(--color-night-text);
   --color-on-info: var(--color-night-text);
 
-  --color-focus: var(--color-primary);
+  --color-focus: #5be7f6;
 }
 
 /* =======================================================

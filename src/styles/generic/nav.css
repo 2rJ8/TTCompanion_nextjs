@@ -92,7 +92,7 @@
 .search-link {
     font-size: 13px;
     font-weight: 600;
-    color: #52666c;
+    color: var(--color-text-muted);
     transition: color 150ms ease;
 }
 
