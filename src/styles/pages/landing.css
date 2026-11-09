@@ -940,7 +940,7 @@ a {
   background: var(--color-surface-elevated);
   border-radius: 6px;
 
-  color: var(--color-text-muted);
+  color: var(--color-text);
 
   font-size: 11px;
   font-weight: 600;
@@ -1490,6 +1490,10 @@ a {
 }
 
 .footer-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding-block: 4px;
   color: var(--color-text-muted);
   font-size: 11px;
   transition: color 150ms ease;
@@ -1545,6 +1549,9 @@ a {
 }
 
 .footer-bottom a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   color: var(--color-text-muted);
   transition: color 150ms ease;
 }
@@ -1775,5 +1782,72 @@ a {
 
   .cta-box {
     border-radius: 14px;
+  }
+}
+
+@media (max-width: 760px) {
+  .button-small {
+    min-height: 44px;
+    padding-inline: 16px;
+    font-size: 14px;
+  }
+
+  .header-icon-button,
+  .mobile-nav-toggle {
+    width: 44px;
+    height: 44px;
+  }
+
+  .main-nav a,
+  .nav-trigger {
+    min-height: 44px;
+    font-size: 14px;
+  }
+
+  .main-nav a {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 8px;
+  }
+
+  .text-link {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 15px;
+  }
+
+  .hero-meta,
+  .tile-meta {
+    font-size: 14px;
+  }
+
+  .collection-meta,
+  .news-card-footer {
+    font-size: 12px;
+  }
+
+  .collection-avatar {
+    width: 28px;
+    height: 28px;
+    font-size: 10px;
+  }
+
+  .collection-meta strong,
+  .news-card-meta span:last-child,
+  .news-rating small,
+  .review-copy span,
+  .review-likes,
+  .game-score span {
+    font-size: 12px;
+  }
+
+  .news-card-content > p {
+    font-size: 14px;
+  }
+
+  .game-tags span,
+  .game-category {
+    font-size: 12px;
   }
 }

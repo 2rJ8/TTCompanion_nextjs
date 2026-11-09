@@ -54,7 +54,7 @@
   --color-text: var(--color-daylight-text);
   --color-border: var(--color-daylight-border);
 
-  --color-text-muted: #64757b;
+  --color-text-muted: #40565c;
 
   --color-on-primary: var(--color-daylight-text);
   --color-on-success: var(--color-daylight-text);
