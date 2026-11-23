@@ -7,6 +7,8 @@ import GamesPage from "./catalog/GamesPage";
 import GameDetailPage from "./catalog/GameDetailPage";
 import LoginPage from "./auth/LoginPage";
 import CheckoutPage from "./checkout/CheckoutPage";
+import LegalNoticePage from "./legal/LegalNoticePage";
+import CookieBanner from "./legal/CookieBanner";
 import SiteFooter from "./layout/SiteFooter";
 
 export default function TableTopApp() {
@@ -55,6 +57,8 @@ export default function TableTopApp() {
     <LoginPage onAuthenticated={handleAuthenticated} />
   ) : route === "#checkout" ? (
     <CheckoutPage />
+  ) : route === "#legal" ? (
+    <LegalNoticePage />
   ) : (
     <HomePage />
   );
@@ -70,6 +74,7 @@ export default function TableTopApp() {
       />
       {page}
       <SiteFooter />
+      <CookieBanner />
     </>
   );
 }

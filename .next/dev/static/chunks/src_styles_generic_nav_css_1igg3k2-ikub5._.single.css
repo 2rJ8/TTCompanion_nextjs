@@ -1,0 +1,359 @@
+/* [project]/src/styles/generic/nav.css [app-client] (css) */
+.site-header {
+  background-color: var(--color-background);
+  z-index: 1000;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  display: flex;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 8px #0000001a;
+}
+
+.skip-link {
+  z-index: 2000;
+  color: var(--color-night-text);
+  background: var(--color-night-background);
+  border-radius: 5px;
+  padding: 10px 14px;
+  transition: transform .15s;
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  transform: translateY(-150%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.container {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.brand {
+  color: var(--text-color);
+  align-items: center;
+  text-decoration: none;
+  display: flex;
+}
+
+.brand-logo {
+  height: 24px;
+  margin-right: .5rem;
+}
+
+.brand-name {
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-bold);
+}
+
+.header-actions {
+  align-items: center;
+  gap: 1rem;
+  display: flex;
+}
+
+.header-icon-button {
+  color: var(--text-color);
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: .5rem;
+}
+
+.header-icon-button:hover {
+  color: var(--primary-color);
+}
+
+.icon--md {
+  font-size: 1.5rem;
+}
+
+.main-nav {
+  gap: 1rem;
+  margin-top: .5rem;
+  display: flex;
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+.main-nav a, .nav-trigger, .search-link {
+  color: var(--color-text-muted);
+  font-size: 13px;
+  font-weight: 600;
+  transition: color .15s;
+}
+
+.main-nav a:hover, .nav-trigger:hover, .search-link:hover {
+  color: var(--color-text);
+}
+
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-trigger {
+  cursor: pointer;
+  min-height: 40px;
+  color: var(--text-color);
+  font-family: inherit;
+  font-weight: var(--font-weight-medium);
+  background: none;
+  border: 0;
+  align-items: center;
+  gap: 6px;
+  padding: 0;
+  display: inline-flex;
+}
+
+.nav-trigger:after {
+  content: "";
+  border-bottom: 1.5px solid;
+  border-right: 1.5px solid;
+  width: 7px;
+  height: 7px;
+  transition: transform .15s;
+  transform: rotate(45deg) translateY(-2px);
+}
+
+.nav-dropdown:hover .nav-trigger:after, .nav-dropdown:focus-within .nav-trigger:after {
+  transform: rotate(225deg) translate(-1px, -1px);
+}
+
+.dropdown-menu {
+  background-color: var(--color-background);
+  border: 1px solid var(--border-color);
+  z-index: 1000;
+  border-radius: 4px;
+  width: 150px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  box-shadow: 0 2px 8px #0000001a;
+}
+
+.dropdown-menu a {
+  color: var(--text-color);
+  white-space: nowrap;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu a:hover {
+  background-color: var(--hover-color);
+}
+
+.dropdown-menu[hidden] {
+  display: none;
+}
+
+.nav-dropdown:hover .dropdown-menu, .nav-dropdown:focus-within .dropdown-menu {
+  display: block;
+}
+
+.header-actions {
+  justify-self: end;
+  align-items: center;
+  gap: 18px;
+  display: flex;
+}
+
+.header-icon-button {
+  border: 1px solid var(--color-border);
+  width: 38px;
+  height: 38px;
+  color: var(--color-text);
+  cursor: pointer;
+  background: none;
+  border-radius: 50%;
+  place-items: center;
+  padding: 0;
+  transition: color .15s, background-color .15s, border-color .15s;
+  display: inline-grid;
+}
+
+.header-icon-button:hover, .header-icon-button:focus-visible {
+  border-color: var(--color-secondary);
+  color: var(--color-secondary);
+  background: var(--color-surface-elevated);
+}
+
+.header-icon-button svg {
+  width: 18px;
+  height: 18px;
+}
+
+.user-button {
+  background: var(--color-surface-elevated);
+  border: 0;
+}
+
+.user-button:hover, .user-button:focus-visible {
+  background: var(--color-primary);
+  color: var(--color-text);
+}
+
+.user-session {
+  align-items: center;
+  gap: 8px;
+  display: flex;
+}
+
+.user-session-name {
+  max-width: 110px;
+  color: var(--color-text-muted);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 11px;
+  overflow: hidden;
+}
+
+@media (max-width: 760px) {
+  .header-inner {
+    grid-template-columns: 1fr auto auto;
+    grid-template-areas: "brand menu actions"
+                         "nav nav nav";
+    gap: 8px;
+    min-height: 68px;
+    padding-block: 8px;
+  }
+
+  .brand {
+    grid-area: brand;
+  }
+
+  .mobile-nav-toggle {
+    border: 1px solid var(--color-border);
+    width: 38px;
+    height: 38px;
+    color: var(--color-text);
+    cursor: pointer;
+    background: none;
+    border-radius: 50%;
+    grid-area: menu;
+    place-items: center;
+    padding: 0;
+    display: inline-grid;
+  }
+
+  .mobile-nav-toggle:hover, .mobile-nav-toggle:focus-visible {
+    border-color: var(--color-secondary);
+    color: var(--color-secondary);
+    background: var(--color-surface-elevated);
+  }
+
+  .main-nav {
+    border-top: 1px solid var(--color-border);
+    flex-direction: column;
+    grid-area: nav;
+    gap: 4px;
+    width: 100%;
+    margin: 0;
+    padding: 8px 0 4px;
+    display: none;
+  }
+
+  .main-nav.is-open {
+    display: flex;
+  }
+
+  .nav-dropdown {
+    width: 100%;
+  }
+
+  .nav-trigger {
+    justify-content: space-between;
+    width: 100%;
+    min-height: 44px;
+    padding: 0 8px;
+    font-size: 13px;
+  }
+
+  .dropdown-menu {
+    width: auto;
+    box-shadow: none;
+    border-radius: 8px;
+    margin: 0 8px 4px;
+    position: static;
+  }
+
+  .dropdown-menu a {
+    padding: 10px 12px;
+  }
+
+  .header-actions {
+    grid-area: actions;
+    gap: 8px;
+  }
+
+  .coffee-support-link, .user-session-name {
+    display: none;
+  }
+}
+
+.brand {
+  flex-shrink: 0;
+  justify-self: start;
+  align-items: center;
+  gap: 12px;
+  display: inline-flex;
+}
+
+.brand-logo {
+  width: 38px;
+  height: 38px;
+  display: block;
+}
+
+.brand-name {
+  font-family: var(--font-display);
+  letter-spacing: -.02em;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.brand-mark {
+  background: var(--color-primary);
+  border-radius: 5px;
+  width: 32px;
+  height: 32px;
+  position: relative;
+  transform: rotate(30deg);
+}
+
+.brand-mark:before, .brand-mark:after, .brand-mark span {
+  content: "";
+  background: var(--color-text);
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+}
+
+.brand-mark:before {
+  top: 6px;
+  left: 6px;
+}
+
+.brand-mark:after {
+  bottom: 6px;
+  right: 6px;
+}
+
+.brand-mark span {
+  top: 6px;
+  right: 6px;
+}
+
+/*# sourceMappingURL=src_styles_generic_nav_css_1igg3k2-ikub5._.single.css.map*/

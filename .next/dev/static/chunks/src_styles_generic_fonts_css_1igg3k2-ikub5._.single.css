@@ -1,0 +1,183 @@
+/* [project]/src/styles/generic/fonts.css [app-client] (css) */
+:root {
+  --font-display: "Space Grotesk", sans-serif;
+  --font-interface: "Inter", sans-serif;
+  --font-body: var(--font-interface);
+}
+
+html, body, button, input, textarea, select, option, optgroup, nav, .nav, .nav__link, .field, .field__label, .field__message, .btn, .chip, .badge, .tab, table, thead, tbody, tfoot, tr, th, td, code, small, label {
+  font-family: var(--font-interface);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+.card__header, .card__footer, .showcase-brand, .showcase-brand__mark {
+  font-family: var(--font-interface);
+}
+
+.font-display-cover {
+  font-family: var(--font-display);
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.font-display-title {
+  font-family: var(--font-display);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.12;
+}
+
+.font-display-section {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.font-text-large {
+  font-family: var(--font-interface);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.55;
+}
+
+.font-text-base {
+  font-family: var(--font-interface);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.55;
+}
+
+.font-label-highlight {
+  font-family: var(--font-interface);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.font-note-base {
+  font-family: var(--font-interface);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.btn {
+  font-family: var(--font-interface);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.chip {
+  font-family: var(--font-interface);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.chip--active {
+  font-weight: 600;
+}
+
+.tab, .nav__link {
+  font-family: var(--font-interface);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.field__label {
+  font-family: var(--font-interface);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.field__message {
+  font-family: var(--font-interface);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.input {
+  font-family: var(--font-interface);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.55;
+}
+
+.badge, .showcase-label {
+  font-family: var(--font-interface);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.showcase-lead {
+  font-family: var(--font-interface);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.55;
+}
+
+.showcase-game-card__cover {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.showcase-hero-card__cover {
+  font-family: var(--font-display);
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.showcase-spacing__item, .showcase-radius__item {
+  font-family: var(--font-interface);
+}
+
+.showcase-spacing__item strong {
+  font-family: var(--font-interface);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.showcase-table {
+  font-family: var(--font-interface);
+}
+
+.showcase-table th {
+  font-family: var(--font-interface);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.showcase-table td, .showcase-alert {
+  font-family: var(--font-interface);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.55;
+}
+
+.showcase-empty {
+  font-family: var(--font-interface);
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+em, i, code, kbd, pre, samp {
+  font-family: var(--font-interface);
+}
+
+/*# sourceMappingURL=src_styles_generic_fonts_css_1igg3k2-ikub5._.single.css.map*/

@@ -3,6 +3,8 @@
 @import url("./pages/game-detail.css");
 @import url("./pages/login.css");
 @import url("./pages/checkout.css");
+@import url("./pages/legal.css");
+@import url("./pages/cookies.css");
 
 :root {
   font-family: system-ui, sans-serif;

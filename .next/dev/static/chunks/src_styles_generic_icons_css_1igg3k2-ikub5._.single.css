@@ -1,0 +1,40 @@
+/* [project]/src/styles/generic/icons.css [app-client] (css) */
+[data-lucide] {
+  color: currentColor;
+  stroke: currentColor;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vertical-align: middle;
+  flex: none;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+}
+
+.icon--xs {
+  width: 14px;
+  height: 14px;
+}
+
+.icon--sm {
+  width: 16px;
+  height: 16px;
+}
+
+.icon--md {
+  width: 20px;
+  height: 20px;
+}
+
+.icon--lg {
+  width: 24px;
+  height: 24px;
+}
+
+.icon--xl {
+  width: 32px;
+  height: 32px;
+}
+
+/*# sourceMappingURL=src_styles_generic_icons_css_1igg3k2-ikub5._.single.css.map*/

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/styles/global.css"],"sourcesContent":["@import url(\"./pages/landing.css\");\r\n@import url(\"./pages/games.css\");\r\n@import url(\"./pages/game-detail.css\");\r\n@import url(\"./pages/login.css\");\r\n@import url(\"./pages/checkout.css\");\r\n@import url(\"./pages/legal.css\");\r\n@import url(\"./pages/cookies.css\");\r\n\r\n:root {\r\n  font-family: system-ui, sans-serif;\r\n  color: #222;\r\n  background: #fff;\r\n  font-synthesis: none;\r\n  text-rendering: optimizeLegibility;\r\n  -webkit-font-smoothing: antialiased;\r\n}\r\n\r\nbody {\r\n  margin: 0;\r\n}\r\n\r\n:where(a, button, input, select, textarea):focus-visible {\r\n  outline: 3px solid var(--color-focus);\r\n  outline-offset: 3px;\r\n}\r\n\r\n.sr-only {\r\n  position: absolute;\r\n  width: 1px;\r\n  height: 1px;\r\n  padding: 0;\r\n  margin: -1px;\r\n  overflow: hidden;\r\n  clip: rect(0, 0, 0, 0);\r\n  white-space: nowrap;\r\n  border: 0;\r\n}\r\n\r\n.empty-results {\r\n  grid-column: 1 / -1;\r\n  padding: 48px;\r\n  color: var(--color-text-muted);\r\n  text-align: center;\r\n}\r\n"],"names":[],"mappings":"AAQA;;;;;;;;;AASA;;;;AAIA;;;;;AAKA;;;;;;;;;;;;AAYA"}}]
+}

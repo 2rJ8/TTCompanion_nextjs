@@ -1,0 +1,184 @@
+/* [project]/src/styles/pages/checkout.css [app-client] (css) */
+.coffee-support-link {
+  border: 1px solid var(--color-border);
+  color: var(--color-secondary);
+  border-radius: 5px;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 11px;
+  font-size: 11px;
+  font-weight: 700;
+  transition: background-color .15s, border-color .15s;
+  display: inline-flex;
+}
+
+.coffee-support-link:hover, .coffee-support-link:focus-visible {
+  border-color: var(--color-secondary);
+  background: #26a6b51a;
+}
+
+.checkout-page {
+  background: var(--color-background);
+  min-height: calc(100vh - 77px);
+  padding: 34px 0 80px;
+}
+
+.checkout-layout {
+  width: min(660px, 100% - 48px);
+}
+
+.checkout-back {
+  width: 100%;
+  color: var(--color-text-muted);
+  margin: 0 0 28px;
+  font-size: 12px;
+  display: block;
+}
+
+.checkout-back a {
+  align-items: center;
+  gap: 6px;
+  min-height: 24px;
+  display: inline-flex;
+}
+
+.checkout-back a:hover {
+  color: var(--color-text);
+}
+
+.checkout-card {
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  border-radius: 14px;
+  width: 100%;
+  padding: 32px;
+  box-shadow: 0 12px 30px #1021260f;
+}
+
+.checkout-heading {
+  align-items: flex-start;
+  gap: 14px;
+  display: flex;
+}
+
+.coffee-icon {
+  width: 42px;
+  height: 42px;
+  color: var(--color-secondary);
+  background: #26a6b51f;
+  border-radius: 50%;
+  flex: none;
+  place-items: center;
+  display: grid;
+}
+
+.checkout-heading h1 {
+  font-family: var(--font-display);
+  margin: 8px 0 6px;
+}
+
+.checkout-heading p {
+  color: var(--color-text-muted);
+  margin: 0;
+  font-size: 13px;
+}
+
+.checkout-summary {
+  color: var(--color-text);
+  background: var(--color-background);
+  border-radius: 8px;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 28px 0 24px;
+  padding: 16px;
+  font-size: 13px;
+  display: flex;
+}
+
+.checkout-summary strong {
+  color: var(--color-secondary);
+}
+
+.checkout-form {
+  gap: 20px;
+  display: grid;
+}
+
+.checkout-form fieldset {
+  border: 0;
+  gap: 8px;
+  padding: 0;
+  display: grid;
+}
+
+.checkout-form legend {
+  color: var(--color-text);
+  font-family: var(--font-display);
+  margin-bottom: 7px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.checkout-form label {
+  color: var(--color-text-muted);
+  margin-top: 5px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.checkout-form input {
+  border: 1px solid var(--color-border);
+  width: 100%;
+  color: var(--color-text);
+  background: var(--color-background);
+  font: inherit;
+  border-radius: 6px;
+  padding: 11px 12px;
+  font-size: 13px;
+}
+
+.checkout-form input:focus {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 1px;
+}
+
+.checkout-fields-row {
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  display: grid;
+}
+
+.checkout-fields-row div {
+  gap: 8px;
+  display: grid;
+}
+
+.checkout-submit {
+  justify-content: center;
+  gap: 7px;
+  margin-top: 4px;
+}
+
+.checkout-note {
+  color: var(--color-text-muted);
+  text-align: center;
+  margin: -8px 0 0;
+  font-size: 11px;
+}
+
+@media (max-width: 760px) {
+  .coffee-support-link {
+    padding: 7px;
+    font-size: 0;
+  }
+
+  .checkout-layout {
+    width: min(100% - 32px, 660px);
+  }
+
+  .checkout-card {
+    padding: 22px;
+  }
+}
+
+/*# sourceMappingURL=src_styles_pages_checkout_css_1igg3k2-ikub5._.single.css.map*/

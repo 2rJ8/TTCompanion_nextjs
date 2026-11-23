@@ -1,10 +1,10 @@
 import { RotateCcw } from "lucide-react";
 
 const filters = [
-  ["estrategia", "Estrategia", 48],
-  ["familiar", "Familiar", 31],
-  ["cooperativo", "Cooperativo", 29],
-  ["solitario", "Solitario", 18],
+  ["estrategia", "Estrategia"],
+  ["familiar", "Familiar"],
+  ["cooperativo", "Cooperativo"],
+  ["solitario", "Solitario"],
 ];
 
 export default function GameFilters({ selected, onToggle, onReset }) {
@@ -18,14 +18,14 @@ export default function GameFilters({ selected, onToggle, onReset }) {
       </div>
       <fieldset>
         <legend>Género</legend>
-        {filters.map(([value, label, count]) => (
+        {filters.map(([value, label]) => (
           <label key={value}>
             <input
               type="checkbox"
               checked={selected.includes(value)}
               onChange={() => onToggle(value)}
             />{" "}
-            {label} <span>{count}</span>
+            {label} 
           </label>
         ))}
       </fieldset>

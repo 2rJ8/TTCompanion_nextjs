@@ -1,0 +1,280 @@
+/* [project]/src/styles/generic/from_factor.css [app-client] (css) */
+:root {
+  --space-xxs: 4px;
+  --space-xs: 8px;
+  --space-s: 12px;
+  --space-m: 16px;
+  --space-l: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --radius-xs: 6px;
+  --radius-s: 10px;
+  --radius-m: 16px;
+  --radius-l: 24px;
+  --radius-pill: 999px;
+  --border-width: 1px;
+}
+
+*, :before, :after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  margin: 0;
+}
+
+button, input, textarea, select {
+  font: inherit;
+}
+
+.container {
+  width: min(100% - 2 * var(--space-l), 1200px);
+  margin-inline: auto;
+}
+
+.stack {
+  flex-direction: column;
+  display: flex;
+}
+
+.stack--xs {
+  gap: var(--space-xs);
+}
+
+.stack--s {
+  gap: var(--space-s);
+}
+
+.stack--m {
+  gap: var(--space-m);
+}
+
+.stack--l {
+  gap: var(--space-l);
+}
+
+.stack--xl {
+  gap: var(--space-xl);
+}
+
+.cluster {
+  align-items: center;
+  gap: var(--space-s);
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.card {
+  border-style: solid;
+  border-width: var(--border-width);
+  border-radius: var(--radius-m);
+  overflow: hidden;
+}
+
+.card__content {
+  padding: var(--space-l);
+}
+
+.card__header {
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-m);
+  display: flex;
+}
+
+.card__footer {
+  align-items: center;
+  gap: var(--space-s);
+  padding: var(--space-m) var(--space-l);
+  display: flex;
+}
+
+.btn {
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-xs);
+  min-height: 40px;
+  padding: 0 var(--space-m);
+  border-radius: var(--radius-s);
+  cursor: pointer;
+  border-style: solid;
+  border-width: 1px;
+  transition: opacity .15s;
+  display: inline-flex;
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: .5;
+}
+
+.btn--icon {
+  width: 40px;
+  padding: 0;
+}
+
+.chip {
+  align-items: center;
+  gap: var(--space-xxs);
+  min-height: 32px;
+  padding: 0 var(--space-s);
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+  border-style: solid;
+  border-width: 1px;
+  display: inline-flex;
+}
+
+.tabs {
+  align-items: center;
+  gap: var(--space-l);
+  border-bottom-style: solid;
+  border-bottom-width: var(--border-width);
+  display: flex;
+}
+
+.tab {
+  padding: var(--space-s) 0;
+  cursor: pointer;
+  border: 0;
+  position: relative;
+}
+
+.tab.is-active {
+  font-weight: 600;
+}
+
+.tab.is-active:after {
+  content: "";
+  inset-inline: 0;
+  height: 2px;
+  position: absolute;
+  bottom: -1px;
+}
+
+.field {
+  gap: var(--space-xs);
+  flex-direction: column;
+  display: flex;
+}
+
+.field__label {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.input {
+  width: 100%;
+  min-height: 44px;
+  padding: 0 var(--space-m);
+  border-radius: var(--radius-s);
+  border-style: solid;
+  border-width: 1px;
+  outline: none;
+}
+
+.badge {
+  min-height: 24px;
+  padding: 0 var(--space-xs);
+  border-radius: var(--radius-pill);
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-flex;
+}
+
+.nav {
+  align-items: center;
+  gap: var(--space-l);
+  display: flex;
+}
+
+.nav__link {
+  align-items: center;
+  min-height: 40px;
+  text-decoration: none;
+  display: inline-flex;
+}
+
+.nav__link.is-active {
+  font-weight: 600;
+}
+
+.icon {
+  flex: none;
+  width: 20px;
+  height: 20px;
+}
+
+.icon--s {
+  width: 16px;
+  height: 16px;
+}
+
+.icon--l {
+  width: 24px;
+  height: 24px;
+}
+
+.radius-xs {
+  border-radius: var(--radius-xs);
+}
+
+.radius-s {
+  border-radius: var(--radius-s);
+}
+
+.radius-m {
+  border-radius: var(--radius-m);
+}
+
+.radius-l {
+  border-radius: var(--radius-l);
+}
+
+.radius-pill {
+  border-radius: var(--radius-pill);
+}
+
+.p-xs {
+  padding: var(--space-xs);
+}
+
+.p-s {
+  padding: var(--space-s);
+}
+
+.p-m {
+  padding: var(--space-m);
+}
+
+.p-l {
+  padding: var(--space-l);
+}
+
+.p-xl {
+  padding: var(--space-xl);
+}
+
+.gap-xs {
+  gap: var(--space-xs);
+}
+
+.gap-s {
+  gap: var(--space-s);
+}
+
+.gap-m {
+  gap: var(--space-m);
+}
+
+.gap-l {
+  gap: var(--space-l);
+}
+
+.gap-xl {
+  gap: var(--space-xl);
+}
+
+/*# sourceMappingURL=src_styles_generic_from_factor_css_1igg3k2-ikub5._.single.css.map*/

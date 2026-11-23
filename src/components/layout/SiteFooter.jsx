@@ -36,7 +36,11 @@ export default function SiteFooter() {
             <a href="#about">Sobre nosotros</a>
             <a href="#contact">Contacto</a>
             <a href="#privacy">Privacidad</a>
-            <a href="#cookies">Cookies</a>
+            <a href="#cookies" onClick={(event) => {
+              event.preventDefault();
+              window.dispatchEvent(new Event("open-cookie-preferences"));
+            }}>Cookies</a>
+            <a href="#legal">Aviso legal</a>
           </div>
         </div>
       </div>
@@ -44,7 +48,7 @@ export default function SiteFooter() {
       <div className="container footer-bottom">
         <span>© 2026 Table Top Companion. Todos los derechos reservados.</span>
         <div>
-          <a href="#terms">Términos de uso</a>
+          <a href="#legal">Aviso legal</a>
           <a href="#accessibility">Accesibilidad</a>
         </div>
       </div>

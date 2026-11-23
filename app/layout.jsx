@@ -74,7 +74,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-      <body>{children}</body>
+      <body className="theme-daylight">{children}</body>
     </html>
   )
 }
